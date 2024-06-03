@@ -1,1 +1,27 @@
-<p>search-results works!</p>
+<div *ngIf="searchResults.length > 0; else noResults">
+  <div>
+    Displaying {{ searchResults.length }} image result{{
+      searchResults.length !== 1 ? "s" : ""
+    }}
+    for "{{ query }}"
+  </div>
+  <div class="results-container">
+    <mat-card class="result-card" *ngFor="let result of searchResults">
+      <ng-container *ngIf="result.images?.length">
+        <img
+          mat-card-image
+          [src]="result.images[0].link"
+          alt="Image"
+          (click)="enlargeImage(result.images[0].link)"
+        />
+      </ng-container>
+    </mat-card>
+    <!-- <mat-card-content>
+        <h2>{{ result.title }}</h2>
+      </mat-card-content> -->
+  </div>
+</div>
+
+<ng-template #noResults>
+  <p *ngIf="query">No image results found for "{{ query }}"</p>
+</ng-template>
