@@ -4,6 +4,10 @@ A place to search and view images.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
 
+## Deployed on ngrok
+
+[imagesearch](https://e42b-2604-2000-8fc0-0-cdb6-9853-c4bf-ba75.ngrok-free.app/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
