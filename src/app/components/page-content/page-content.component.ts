@@ -17,6 +17,5 @@ export class PageContentComponent {
   updateSearchResults(event: { query: string; results: ImageResult[] }) {
     this.query = event.query;
     this.searchResults = event.results;
-    console.log('searchreaults', this.searchResults);
   }
 }

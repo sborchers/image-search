@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 
 @Component({
@@ -7,7 +8,7 @@ import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
   templateUrl: './search-details-modal.component.html',
   styleUrl: './search-details-modal.component.scss',
   standalone: true,
-  imports: [MatDialogModule, MatButtonModule],
+  imports: [MatDialogModule, MatButtonModule, MatIconModule],
 })
 export class SearchDetailsModalComponent {
   imageUrl: string;

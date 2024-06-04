@@ -19,7 +19,6 @@ export class SearchResultsComponent {
   private dialog = inject(MatDialog);
 
   enlargeImage(imageUrl: string): void {
-    console.log('url', imageUrl);
     this.dialog.open(SearchDetailsModalComponent, {
       data: { imageUrl },
     });

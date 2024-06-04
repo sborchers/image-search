@@ -22,7 +22,7 @@ export class ImgurService {
       const data: ImageResponse = await response.json();
       // Filter out NSFW images and non-image types
       data.data = data.data.filter(
-        (image) => !image.nsfw && image.images[0].type.includes('image')
+        (image) => !image.nsfw && image.images?.[0]?.type.includes('image')
       );
       return data;
     } catch (error) {
