@@ -8,8 +8,8 @@ export class ImgurService {
   private baseUrl: string = 'https://api.imgur.com/3/gallery/search/';
   private clientId: string = 'b067d5cb828ec5a';
 
-  async searchImages(query: string): Promise<ImageResponse> {
-    const url = `${this.baseUrl}?q=${query}`;
+  async searchImages(query: string, page: number): Promise<ImageResponse> {
+    const url = `${this.baseUrl}${page}?q=${query}`;
     const headers = new Headers({
       Authorization: 'Client-ID ' + this.clientId,
     });
