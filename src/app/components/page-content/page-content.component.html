@@ -1,9 +1,11 @@
 <div class="page-content">
-  <h1>Welcome to image search</h1>
-  <div class="search-bar">
-    <app-search-bar
-      (searchResultsChange)="updateSearchResults($event)"
-    ></app-search-bar>
+  <div class="search-content">
+    <h1>Welcome to image search</h1>
+    <div class="search-bar">
+      <app-search-bar
+        (searchResultsChange)="updateSearchResults($event)"
+      ></app-search-bar>
+    </div>
   </div>
   <div class="search-results">
     <app-search-results

@@ -1,5 +1,5 @@
 <div *ngIf="searchResults.length > 0; else noResults">
-  <div>
+  <div class="results-caption">
     Displaying {{ searchResults.length }} image result{{
       searchResults.length !== 1 ? "s" : ""
     }}
@@ -16,12 +16,11 @@
         />
       </ng-container>
     </mat-card>
-    <!-- <mat-card-content>
-        <h2>{{ result.title }}</h2>
-      </mat-card-content> -->
   </div>
 </div>
 
 <ng-template #noResults>
-  <p *ngIf="query">No image results found for "{{ query }}"</p>
+  <p class="results-caption" *ngIf="query">
+    No image results found for "{{ query }}"
+  </p>
 </ng-template>

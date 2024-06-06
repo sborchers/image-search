@@ -20,7 +20,9 @@ export class SearchResultsComponent {
 
   enlargeImage(imageUrl: string): void {
     this.dialog.open(SearchDetailsModalComponent, {
-      data: { imageUrl },
+      data: { imageUrl: imageUrl },
+      maxWidth: '90vw',
+      maxHeight: '90vh',
     });
   }
 }

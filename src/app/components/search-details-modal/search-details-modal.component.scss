@@ -1,0 +1,19 @@
+.dialog-actions {
+  padding: 8px;
+}
+
+.dialog-content {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-bottom: 57px;
+  padding: 0;
+  align-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.dialog-image {
+  max-height: calc(90vh - 114px);
+  max-width: 90vw;
+}

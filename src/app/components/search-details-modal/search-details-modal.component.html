@@ -1,10 +1,6 @@
-<mat-dialog-actions>
+<mat-dialog-actions class="dialog-actions">
   <button mat-icon-button mat-dialog-close><mat-icon>close</mat-icon></button>
 </mat-dialog-actions>
-<mat-dialog-content>
-  <img
-    [src]="data.imageUrl"
-    alt="Image"
-    style="max-width: 100%; max-height: 100%"
-  />
+<mat-dialog-content class="dialog-content">
+  <img [src]="data.imageUrl" alt="Image" class="dialog-image" />
 </mat-dialog-content>
