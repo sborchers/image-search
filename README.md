@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Deployed on ngrok
 
-[imagesearch](https://e42b-2604-2000-8fc0-0-cdb6-9853-c4bf-ba75.ngrok-free.app/)
+[imagesearch](https://merry-nominally-dassie.ngrok-free.app/)
 
 ## Development server
 
