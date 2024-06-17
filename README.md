@@ -4,9 +4,9 @@ A place to search and view images.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
 
-## Deployed on ngrok
+## Deployed on Netlify
 
-[imagesearch](https://merry-nominally-dassie.ngrok-free.app/)
+[imagesearch](https://sb-image-search.netlify.app/)
 
 ## Development server
 
